@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Accordion with Expanding Panels</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <style>
+    /* Make the accordion horizontal */
+    .accordion-horizontal {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    /* Each accordion item will have a flex-grow of 1 */
+    .accordion-horizontal .accordion-item {
+      flex: 1;
+      transition: all 0.3s ease; /* Smooth transition for expansion */
+    }
+
+    /* When the accordion is open, it should take up the full width */
+    .accordion-horizontal .accordion-button {
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    /* When an item is active, it will expand to take full width */
+    .accordion-horizontal .accordion-button.collapsed {
+      width: 100%;
+    }
+
+    .accordion-horizontal .accordion-collapse {
+      width: 100%;
+    }
+
+    /* Ensure the container takes full height of the viewport */
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+    <!-- RESUME (Accordion Item) -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Resume
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <!-- Content for Resume goes here -->
+            <div class="container">  
+                <div class="card card-body bg-resume text-white py-5">
+                <h2>My Resume</h2>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+                </div>
+                <div class="card card-body py-5">
+                <h3>Where Have I Worked?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique saepe inventore rem vitae esse.</p>
+                <!-- Work details go here -->
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- WORK (Accordion Item) -->
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Work
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <!-- Content for Work goes here -->
+            <div class="container">  
+                <div class="card card-body bg-work text-white py-5">
+                <h2>My Work</h2>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+                </div>
+                <div class="card card-body py-5">
+                <h3>What Have I Built?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum repudiandae debitis, nam iste amet.</p>
+                <!-- Work content (images) goes here -->
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+  
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

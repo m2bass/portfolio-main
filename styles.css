@@ -1,0 +1,204 @@
+#header {
+  background-color: #fe9b1a;
+  color: #ffffff;
+  padding: 15px 15px 15px 50px;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.top-color {
+  background-color: #f7addd;
+}
+
+.portfoliobg {
+  background-color: #3D348B;
+}
+
+.bg-resume {
+  background-color: #3D348B;
+}
+
+.bg-work {
+  background-color: #B00C0C;
+}
+
+.bg-contact {
+  background-color: #A51274;
+}
+
+/* Container for flexbox 
+.row {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+} */
+
+.row {
+  justify-content: center;
+}
+
+
+#home .fas, #resume .fas {
+  color: #fff;
+  background: #008ed6;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.column, .column2 {
+  flex: 1;
+  padding: 20px;
+  margin: 0px;
+  background-color: #fe9b1a;
+  color: #333333;
+  text-align: center; /* Center text within columns */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width/height */
+}
+
+.column img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio of the image */
+  max-width: 100%; /* Prevent the image from exceeding its natural size */
+}
+
+/* On screens that are 992px wide or less, go to two columns */
+@media screen and (max-width:992px){
+.column {
+  flex: 50%;
+}  
+}
+
+/* On  screens that are 600px wide or less, make the columns  stack onn top  of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+row {
+  flex-direction: column;
+}
+}
+
+.htext {
+  color: #3D348B;    
+  font-weight: lighter;
+  font-family: "Poppins Black";
+  font-size: 2em;
+
+}
+
+.htext2 {
+  letter-spacing: 7px;
+  font-size: 8em;
+  font-family: "Poppins Thin";
+}
+
+.htext3 {
+letter-spacing: 5px;
+font-size: 4em;
+font-family: "Poppins Medium";
+}
+
+.ctext { 
+font-family: "Poppins Light";
+}
+
+.ctext2 { 
+font-family: "Poppins Medium";
+color: #3D348B;
+font-size: 2em;
+}
+
+p {
+padding: 0px 20px 0px 20px;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333333;
+  align-items:center;
+  font-family: "Poppins Medium";
+  padding-left: 25px;
+  
+}
+/* Navigation link colors */
+.navbar a{
+  color: #e7e7e7;
+}
+
+.navbar ul {
+  /* Reset the margin and padding of the list*/
+  margin: 0;
+  padding:0;
+
+  /* Remove bullet point */
+  list-style-type:none;
+
+  /*Dislay the list flex and align items center*/
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: #e7e7e7;
+  padding: 24px;
+  display: block;
+}
+
+/* When a user hovers, focuses or if the link is active change the background */
+.navbar ul a:hover,
+.navbar ul a:focus {
+  background-color: purple;
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer {
+background-color: #3D348B;
+padding: 20px 20px 20px 20px;
+text-align: center;
+color: #ffffff;
+}
+
+
+/*#main-header img {
+  width: 100%;
+  height: 100%;
+}*/
+
+#main-header .port-item {
+  width: 30%;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.bg-black {
+  color: #fff;
+  background: #000;
+}
+
+.bg-blue {
+  background: #008ed6;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
+
+.collapse {
+  display: none;
+}
+.collapse.show {
+  display: block;
+}
+
+.form-control::placeholder {
+  color: #ccc; /* Light grey placeholder text */
+  opacity: 1; /* Ensure it's not faded out */
+}
+
+
