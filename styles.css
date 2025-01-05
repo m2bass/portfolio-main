@@ -6,6 +6,31 @@
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
+.card {
+  border-radius: 0 !important;
+}
+
+img{
+  width: 100%; 
+}
+
+.gallery {
+  background-color: #dbddf1;
+  padding: 80px;
+}
+
+.gallery img{
+  background-color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+  width: 100%;
+}
+
 
 .top-color {
   background-color: #f7addd;
@@ -158,12 +183,6 @@ padding: 20px 20px 20px 20px;
 text-align: center;
 color: #ffffff;
 }
-
-
-/*#main-header img {
-  width: 100%;
-  height: 100%;
-}*/
 
 #main-header .port-item {
   width: 30%;
